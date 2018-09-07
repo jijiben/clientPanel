@@ -1,0 +1,11 @@
+
+<div class="row">
+    <div class="col-12">
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Navbar</a>
+    <button class="btn btn-outline-success" *ngIf="!isLoggedIn" routerLink="/client/login">Login</button>
+    <button class="btn btn-outline-success" *ngIf="isLoggedIn" (click)="onLogoutClick()">Logout</button>
+  </nav>
+</div>
+</div>
+  

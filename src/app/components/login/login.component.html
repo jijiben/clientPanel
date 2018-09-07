@@ -1,0 +1,27 @@
+
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form (ngSubmit)="onSubmit()" class="form-signin">
+              <div class="form-label-group">
+                <input [(ngModel)]="email" type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" style="border-left-width: 10px;" required autofocus> 
+                <label for="inputEmail" style="border-left-width: 10px;">Email address</label>
+              </div>
+
+              <div class="form-label-group">
+                <input [(ngModel)]="password" type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"  style="border-left-width: 10px;" required>
+                <label for="inputPassword" style="border-left-width: 10px;">Password</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
